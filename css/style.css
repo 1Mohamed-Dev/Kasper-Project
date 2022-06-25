@@ -19,6 +19,7 @@ body{
 
 :root{
     --main-color: #19c8fa;
+    --second-color: rgb(15 116 143 / 70%)
 }
 
 ul{
