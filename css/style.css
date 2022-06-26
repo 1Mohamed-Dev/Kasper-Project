@@ -576,6 +576,12 @@ header nav .form i{
     position: relative;
 }
 
+@media (max-width: 455px) {
+    .video{
+        display: none;
+    }
+}
+
 .video::before{
     content: "";
     position: absolute;
