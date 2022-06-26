@@ -71,7 +71,7 @@ ul{
     left: 50%;
     transform: translateX(-50%);
     height: 2px;
-    background-color: #333;
+    background-color: var(--main-color);
     bottom: -30px;
     width: 130px;
 }
@@ -86,7 +86,7 @@ ul{
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    border: 2px solid #333;
+    border: 2px solid var(--main-color);
     background-color: white;
 }
 
@@ -654,3 +654,84 @@ header nav .form i{
 }
 
 /* End About */
+
+/*Start Stats*/
+
+.stats{
+    padding: 100px 0;
+    text-align: center;
+    background-image: url(../imgs/stats.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.stats::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb( 0 0 0 / 70%);
+}
+
+.stats .con{
+    position: relative;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stats .con .box{
+    color: white;
+    padding: 50px;
+    background-color: var(--second-color);
+}
+
+@media (max-width: 767px) {
+    .stats .con .box{
+        flex-basis: 99%;
+    }
+    
+    .stats .con .box:not(:last-child){
+        margin-bottom: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .stats .con .box{
+        flex-basis: 49%;
+        margin-bottom: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    .stats .con .box{
+        flex-basis: 24%;
+    }
+}
+
+.stats .con .box i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    font-size: 30px;
+}
+
+.stats .con .box .num{  
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.stats .con .box p{
+    color: var(--main-color);
+}
+
+/* End Stats */
