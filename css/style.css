@@ -625,3 +625,32 @@ header nav .form i{
 }
 
 /* End Video */
+
+/*Start About*/
+
+.about{
+    padding-top: 100px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.about img{
+    position: relative;
+    bottom: -150px;
+    margin-top: -150px;
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+.about img:hover{
+    transform: translateY(-15px);
+}
+
+@media (max-width: 767px) {
+    .about img{
+        bottom: -60px;
+        margin-top: -60px;
+    }
+}
+
+/* End About */
