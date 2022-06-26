@@ -403,3 +403,81 @@ header nav .form i{
 }
 
 /* End Services */
+
+/*Start Design*/
+
+.design{
+    padding-top: 100px 0;
+    height: 600px;
+    position: relative;
+    background-image: url(../imgs/features.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.design::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb( 0 0 0 / 50%);
+}
+
+.design .img,
+.design .txt{
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
+
+.design .img{
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .design .img{
+        display: none;
+    }
+}
+
+.design .img img{
+    position: relative;
+    bottom: -200px;
+    transition: 0.6s;
+}
+
+.design .img img:hover{
+    bottom: -170px;
+}
+
+.design .txt{
+    color: white;
+    padding: 50px;
+    background-color: var(--second-color);
+}
+
+.design .txt h2{
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.design .txt ul li{
+    padding: 15px 0;
+}
+
+.design .txt ul li::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f26c";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+
+/* End Design */
