@@ -735,3 +735,142 @@ header nav .form i{
 }
 
 /* End Stats */
+
+/*Start Skills*/
+
+.skills{
+    padding: 100px 0;
+}
+
+.skills .con{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+    .skills .con > div{
+        flex-basis: 45%;
+    }
+}
+
+.skills .con > div > h3{
+    margin: 0 0 30px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skills .con > div > p{
+    color: #777;
+    text-align: center;
+    line-height: 1.9;
+    margin-bottom: 60px;
+}
+
+.skills .con .testimonials .cont img{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.skills .con .testimonials .cont{
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .skills .con .testimonials .cont{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills .con .testimonials .cont img{
+        margin: 0 auto 20px;
+    }
+}
+
+.skills .con .testimonials .txt{
+    line-height: 1.6;
+    border-bottom: 1px solid #ccc;
+}
+
+.skills .con .testimonials .txt p{
+    color: #777;
+    text-align: end;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.skills .con .testimonials .bullets{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.skills .con .testimonials .bullets li{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.skills .con .testimonials .bullets li.active{
+    background-color: var(--main-color);
+    margin: 0 5px;
+}
+
+.skills .con .testimonials .bullets li.n-active:hover{
+    transform: translateY(-5px);
+}
+
+.skills .lang-skills .prog-hold{
+    margin-bottom: 40px;
+}
+
+.skills .lang-skills .prog-hold h4{
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.skills .lang-skills .prog-hold .prog{
+    background-color: #dedadc;
+    height: 30px;
+}
+
+.skills .lang-skills .prog-hold .prog span{
+    display: block;
+    background-color: var(--main-color);
+    height: 100%;
+    position: relative;
+}
+
+.skills .lang-skills .prog-hold .prog span::before{
+    content: attr(data-progress);
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: -40px;
+    right: -21px;
+    width: 45px;
+    padding: 4px 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.skills .lang-skills .prog-hold .prog span::after{
+    content: "";
+    position: absolute;
+    border-width: 8px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    right: -8px;
+    top: -15px;
+}
+
+/* End Skills */
