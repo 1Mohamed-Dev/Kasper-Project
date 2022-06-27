@@ -206,7 +206,14 @@ header nav .form i{
     transform: translateY(-50%);
     right: 0;
     cursor: pointer;
+    transition: 0.6s;
 }
+
+header nav .form i:hover{
+    color: var(--main-color);
+}
+
+
 /* End Header */
 
 /*Start Landing*/
@@ -496,6 +503,12 @@ header nav .form i{
 .portfolio .shuffle li{
     padding: 10px;
     cursor: pointer;
+    transition: 0.6s;
+}
+
+.portfolio .shuffle li:not(.active):hover{
+    background-color: var(--second-color);
+    color: white;
 }
 
 .portfolio .shuffle li.active{
@@ -566,6 +579,12 @@ header nav .form i{
     margin: 30px auto 0;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 0.6s;
+}
+
+.portfolio .more:hover{
+    color: var(--main-color);
+    background-color: black;
 }
 
 /* End Portfolio */
@@ -622,6 +641,11 @@ header nav .form i{
     padding: 10px 10px;
     border: none;
     text-transform: uppercase;
+    transition: 0.6s;
+}
+
+.video .txt button:hover{
+    background-color: var(--main-color);
 }
 
 /* End Video */
@@ -777,6 +801,11 @@ header nav .form i{
     width: 100px;
     border-radius: 50%;
     margin-right: 50px;
+    transition: 0.6s;
+}
+
+.skills .con .testimonials .cont img:hover{
+    transform: rotateZ(1turn);
 }
 
 .skills .con .testimonials .cont{
@@ -922,6 +951,7 @@ header nav .form i{
     position: relative;
     top: -15px;
     left: 15px;
+    color: var(--main-color);
 }
 
 .quote q::after{
@@ -932,6 +962,7 @@ header nav .form i{
     position: relative;
     top: 15px;
     right: -5px;
+    color: var(--main-color);
 }
 
 
