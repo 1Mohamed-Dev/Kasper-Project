@@ -1170,3 +1170,95 @@ header nav .form i:hover{
 }
 
 /* End Subscribe */
+
+/*Start Contact*/
+
+.contact{
+    padding: 100px 0;
+}
+
+.contact .cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+    .contact .cont{
+        flex-direction: column;
+    }
+}
+
+.contact .cont form{
+    flex-basis: 70%;
+}
+
+.contact .cont form .main-input{
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 100%;
+    caret-color: var(--main-color);
+}
+
+.contact .cont form .main-input:focus{
+    outline: none;
+}
+
+.contact .cont form input[type="submit"]{
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 20px;
+    display: flex;
+    margin-left: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact .cont .info{
+    flex-basis: 25%;
+}
+
+@media (max-width: 767px) {
+    .contact .cont .info{
+        order: -1;
+        text-align: center;
+    }
+}
+
+.contact .cont .info h4{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}   
+
+.contact .cont .info .phone{
+    display: block;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.contact .cont .info h4:nth-of-type(2){
+    margin-top: 90px;
+}
+
+@media (max-width: 767px) {
+    .contact .cont .info h4:nth-of-type(2){
+        margin-top: 30px;
+    }
+}
+
+.contact .cont .info address{
+    color: #777;
+    line-height: 1.9;
+}
+
+@media (max-width: 767px) {
+    .contact .cont .info address{
+        margin-bottom: 30px;
+    }
+}
+
+/* End Contact */
