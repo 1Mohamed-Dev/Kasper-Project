@@ -982,6 +982,12 @@ header nav .form i:hover{
 .pricing .plans .box{
     background-color: #f8f8f8;
     text-align: center;
+    box-shadow: -8px 8px 0px 0px #00000026;
+    transition: 0.6s;
+}
+
+.pricing .plans .box:hover{
+    box-shadow: 8px 8px 0px 0px #00000026;
 }
 
 
