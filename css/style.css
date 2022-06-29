@@ -1181,11 +1181,47 @@ header nav .form i:hover{
 
 .contact{
     padding: 100px 0;
+    background-image: url(../imgs/Shuffle-05.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    border-top: 5px solid var(--main-color);
+    border-bottom: 5px solid var(--main-color);
+}
+
+.contact .con > .main-heading > p{
+    color: white;
+}
+
+.contact .con > .main-heading > h2{
+    color: white;
+}
+
+.contact::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb( 0 0 0 / 60%);
+    z-index: -2;
 }
 
 .contact .cont{
     display: flex;
     justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contact .con{
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #083a47b4;
 }
 
 @media (max-width: 767px) {
@@ -1203,8 +1239,15 @@ header nav .form i:hover{
     display: block;
     border: 1px solid #ccc;
     margin-bottom: 30px;
+    background-color: rgba(119, 119, 119, 0.418);
     width: 100%;
     caret-color: var(--main-color);
+    border-radius: 10px;
+    color: var(--main-color);
+}
+
+.contact .cont form .main-input::placeholder{
+    color: var(--main-color);
 }
 
 .contact .cont form .main-input:focus{
@@ -1242,7 +1285,7 @@ header nav .form i:hover{
 
 .contact .cont .info .phone{
     display: block;
-    color: #777;
+    color: white;
     margin-bottom: 10px;
 }
 
@@ -1257,7 +1300,7 @@ header nav .form i:hover{
 }
 
 .contact .cont .info address{
-    color: #777;
+    color: white;
     line-height: 1.9;
 }
 
